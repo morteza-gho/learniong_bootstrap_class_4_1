@@ -1,0 +1,24 @@
+body {
+  background: #EEE;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: tahoma;
+}
+
+a {
+  text-decoration: none;
+}
+
+.red-text {
+  color: red;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.green-text {
+  color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

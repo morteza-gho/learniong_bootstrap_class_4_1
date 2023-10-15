@@ -1,0 +1,14 @@
+@import "variables";
+@import "general";
+
+
+.red-text {
+	color: $primary_color;
+}
+.blue-text {
+	color: $secondary_color;
+}
+.green-text {
+	color: $tertiary_color;
+}
+
