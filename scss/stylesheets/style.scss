@@ -2,3 +2,22 @@
 @import "posts";
 
 
+.box {
+	background: $gray;
+	border: 1px solid darken($gray, 20%);
+	padding: $gap;
+	margin: $gap*3 auto;
+	min-height: 100px;
+	@include brRadius();
+}
+
+.box1 {
+	@extend .box;
+	width: 300px;
+}
+
+.box2 {
+	@extend .box;
+	min-height: 200px;
+	width: 500px;
+}

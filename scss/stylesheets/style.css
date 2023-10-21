@@ -66,4 +66,25 @@ a {
   font-size: 0.8rem;
 }
 
+.box, .box2, .box1 {
+  background: #CCC;
+  border: 1px solid #999999;
+  padding: 12px;
+  margin: 36px auto;
+  min-height: 100px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.box1 {
+  width: 300px;
+}
+
+.box2 {
+  min-height: 200px;
+  width: 500px;
+}
+
 /*# sourceMappingURL=style.css.map */
