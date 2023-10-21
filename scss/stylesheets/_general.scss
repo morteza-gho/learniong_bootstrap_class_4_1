@@ -1,5 +1,8 @@
-body {
-	background: #EEE;
+@import "variables";
+@import "mixins";
+
+html, body {
+	background: #FFF;
 	font-size: 16px;
 	line-height: 1.6;
 	font-family: tahoma;

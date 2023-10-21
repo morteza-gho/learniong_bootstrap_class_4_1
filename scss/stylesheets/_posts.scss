@@ -1,0 +1,56 @@
+
+#posts {
+
+}
+.post {
+	border: 1px solid darken($gray, 20%);
+	background: lighten($gray, 18%);
+	width: 400px;
+	margin: $gap*3 auto;
+	/*padding: $gap*2;*/
+	@include brRadius();
+
+	.post-header {
+		background: lighten($gray, 5%);
+		border-bottom: 1px solid darken($gray, 20%);
+		padding: $gap;
+		@include brRadius($radius $radius 0 0);
+
+		.title {
+			margin: 0;
+			font-size: 1.5rem;
+			text-transform: capitalize;
+		}
+	} // .post-heder
+
+	.img-wrapper {
+		margin: 0;
+		padding: $gap;
+
+		img {
+			width: 100%;
+			@include brRadius($radius/2);
+			@include boxShadow(0px 2px 4px #0000003b);
+		}
+	}
+
+	.content {
+		padding: $gap;
+		font-size: 1rem;
+		text-align: justify;
+
+		p {
+			margin: 0;
+		}
+	}
+
+	.post-details {
+		border-top: 2px solid $gray;
+		padding: $gap;
+		display: flex;
+		justify-content: space-between;
+		text-transform: capitalize;
+		font-size: .8rem;
+	}
+
+} // .post
