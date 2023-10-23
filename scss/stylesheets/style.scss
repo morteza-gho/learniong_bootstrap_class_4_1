@@ -25,3 +25,26 @@
 .buttons-wrapper {
 	margin: 50px;
 }
+
+$fileIcons: pdf doc xls jpg psd;
+
+.files {
+	padding: 0;
+	margin: 0;
+	display: flex;
+
+	li {
+		list-style-type: none;
+		width: 40px;
+		height: 40px;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	@each $icon in $fileIcons {
+		li.icon-#{$icon} {
+			background-image: url("./images/icon-#{$icon}.png");
+		}
+	}
+
+} // .files
