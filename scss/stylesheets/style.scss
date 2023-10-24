@@ -48,3 +48,13 @@ $fileIcons: pdf doc xls jpg psd;
 	}
 
 } // .files
+
+.site-title {
+	@include rtlLtr(text-align, left, right)
+}
+.site-description {
+	@include rtlLtr(text-align, left, right)
+}
+.test-button {
+	@include rtlLtr(float, right, left)
+}
