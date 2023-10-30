@@ -1,0 +1,38 @@
+extends partials/_layout
+block main
+   .container
+      .row.justify-content-center.align-items-center(style="height: 100vh")
+         .col-4
+            form.p-4.rounded-4.bg-secondary-subtle()
+               .mb-3
+                  label.form-label(for='email') Email address
+                  input#email.form-control.is-invalid(type='email' placeholder='name@example.com' required)
+               .mb-3
+                  label.form-label(for='address') Example textarea
+                  textarea#address.form-control(rows='3')
+               .mb-3
+                  select.form-select(aria-label='Default select example')
+                     option(selected='') Open this select menu
+                     option(value='1') One
+                     option(value='2') Two
+                     option(value='3') Three
+               .mb-3
+                  .form-check.form-switch
+                     input#flexSwitchCheckDefault.form-check-input(type='checkbox' role='switch')
+                     label.form-check-label(for='flexSwitchCheckDefault') Default switch checkbox input
+
+               .mb-3
+                  .form-floating.mb-3
+                     input#floatingInput.form-control(type='email' placeholder='name@example.com')
+                     label(for='floatingInput') Email address
+
+               .mb-3
+                  input#female.btn-check(type='radio' name='gender' autocomplete='off' checked)
+                  label.btn(for='female') Female
+                  input#male.btn-check(type='radio' name='gender' autocomplete='off')
+                  label.btn(for='male') Male
+
+               div
+                  button.btn.btn-success Submit
+
+
