@@ -1,0 +1,23 @@
+extends partials/_layout
+block main
+   .container
+      .row.my-5
+         .col-6.mx-auto
+            // Button trigger modal
+            button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal')
+               | Launch demo modal
+            // Modal
+            #exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+               .modal-dialog
+                  .modal-content
+                     .modal-header
+                        h1#exampleModalLabel.modal-title.fs-5 Modal title
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                     .modal-body
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus dolor dolores, facere labore mollitia nihil nulla saepe sint vel? Distinctio est excepturi, facilis fugiat nulla quo repellat. Porro, voluptas!
+                     .modal-footer
+                        button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                        button.btn.btn-primary(type='button') Save changes
+
+
+
